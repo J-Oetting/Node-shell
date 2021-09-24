@@ -10,7 +10,7 @@ const pwdVar = process.stdin.on('data', (data) => {
   
     if (cmd === 'pwd'){
         
-        pwd();
+        pwd.printPwd();
   
     }
   

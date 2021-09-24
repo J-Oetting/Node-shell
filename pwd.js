@@ -1,4 +1,4 @@
-module.exports = function printPwd(){
+module.exports.printPwd = () => {
   process.stdout.write(process.cwd());
 } 
 
