@@ -1,3 +1,6 @@
+const pwd = require('./pwd');
+const ls = require('./ls');
+
 process.stdout.write('prompt >');
 
 const pwdVar = process.stdin.on('data', (data) => {
@@ -6,13 +9,13 @@ const pwdVar = process.stdin.on('data', (data) => {
     
   
     if (cmd === 'pwd'){
-        const pwd = require('./pwd');
+        
         pwd();
   
     }
   
     else if(cmd === 'ls'){
-        const ls = require('./ls');
+        
         ls();
     }
     
